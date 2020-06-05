@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="383.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scs.iss.agentie.controller.AdminController">
+   <children>
+      <TableView fx:id="productTable" layoutX="70.0" layoutY="46.0" prefHeight="296.0" prefWidth="318.0">
+        <columns>
+          <TableColumn fx:id="productNameColumn" prefWidth="113.60003662109375" text="Product name" />
+          <TableColumn fx:id="amountColumn" prefWidth="124.79997253417969" text="Available amount" />
+            <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="438.0" layoutY="72.0" text="Product name" />
+      <TextField fx:id="productNameTextField" layoutX="573.0" layoutY="64.0" />
+      <TextField fx:id="amountTextField" layoutX="573.0" layoutY="123.0" />
+      <TextField fx:id="priceTextField" layoutX="573.0" layoutY="190.0" />
+      <Label layoutX="438.0" layoutY="131.0" text="Available amount" />
+      <Label layoutX="438.0" layoutY="198.0" text="Price" />
+      <Button layoutX="425.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleAdd" text="Add" />
+      <Button layoutX="503.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+      <Button layoutX="609.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+   </children>
+</AnchorPane>
